@@ -1,0 +1,55 @@
+.lists_main_div {
+  margin: auto 10%;
+}
+
+.image_next {
+  height: 80px;
+  width: 80px;
+}
+.list_item__image {
+  height: 80px;
+  width: 80px;
+  position: relative;
+}
+
+.list_item__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list_item {
+  padding: 15px;
+  margin: 15px;
+  border: 1px transparent;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.list_item__title {
+  font-size: 20px;
+  font-weight: bold;
+  color: crimson;
+  text-transform: capitalize;
+  text-align: left;
+}
+.list_item__description {
+  font-style: italic;
+  color: white;
+}
+
+.list_buttons {
+  padding: 10px;
+  margin: 5px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.list_buttons_div {
+  display: flex;
+  flex-direction: row;
+}
