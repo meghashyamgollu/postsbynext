@@ -23,10 +23,10 @@ const View: FC<PostsData> = ({ postsData }) => {
   const { type } = router.query;
   const [posts, setPosts] = useState<PostData[]>([...postsData]);
 
-  const handleDelete = (id: number) => {
+  const handleDelete = (id: PostData["id"]) => {
     let newPosts: PostData[] = posts.filter((post) => post.id !== id);
     setPosts([...newPosts]);
-    console.log("delete", id, posts);
+    console.log("delete", id, newPosts);
   };
 
   return (

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import { FC } from "react";
 import styles from "../styles/Home.module.css";
@@ -6,9 +5,6 @@ import styles from "../styles/Home.module.css";
 const Home: FC = () => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Posts Viewer</title>
-      </Head>
       <h1 className={styles.title}>Posts Viewer</h1>
       <div className={styles.cont1}>
         <div className={styles.subcont}>

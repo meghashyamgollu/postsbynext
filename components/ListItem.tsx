@@ -8,8 +8,8 @@ interface EleProps {
   handleDelete: (id: number) => void;
 }
 
-const ListItem: FC <EleProps> = ({ item, handleDelete }) => {
-  const [expanded, setExpanded] = useState(false);
+const ListItem: FC<EleProps> = ({ item, handleDelete }) => {
+  const [expanded, setExpanded] = useState<boolean>(false);
   return (
     <div className={styles.list_item}>
       <div className={styles.list_item__main}>
@@ -33,7 +33,12 @@ const ListItem: FC <EleProps> = ({ item, handleDelete }) => {
           <button
             className={styles.list_buttons}
             onClick={() => setExpanded(!expanded)}
-            style={{fontWeight: "900", fontSize: "22px", backgroundColor: "transparent", color: "white"}}
+            style={{
+              fontWeight: "900",
+              fontSize: "22px",
+              backgroundColor: "transparent",
+              color: "white",
+            }}
           >
             ⓘ
           </button>

@@ -9,8 +9,8 @@ interface EleProps{
 }
 
 const GridItem: FC <EleProps> = ({ item, handleDelete }) => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [options, setOptions] = useState(false);
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [options, setOptions] = useState<boolean>(false);
   return (
     <div
       className={styles.grid_item}
